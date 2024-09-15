@@ -1,4 +1,3 @@
-import 'package:camera/camera.dart';
 import 'package:fast_8_test/data/dummy_data.dart';
 import 'package:fast_8_test/presentation/pages/profile/informasi_pribadi/informasi_pribadi_controller.dart';
 import 'package:fast_8_test/presentation/pages/profile/informasi_pribadi/widget/textformfield.dart';
@@ -18,9 +17,6 @@ class InformasiPribadiPage extends StatefulWidget {
 
 class _InformasiPribadiPageState extends State<InformasiPribadiPage> {
   final controller = Get.find<InformasiPribadiController>();
-
-  List<CameraDescription> camerasDescription = [];
-  CameraController? cameraController;
   bool? isChecked = false;
   int _currentStep = 0;
 

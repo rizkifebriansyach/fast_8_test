@@ -1,6 +1,4 @@
 import 'dart:io';
-
-import 'package:camera/camera.dart';
 import 'package:image_picker/image_picker.dart';
 
 class Helper{
@@ -13,17 +11,6 @@ class Helper{
     return File(_pickedFile!.path);
   }
 
-  static Future<void>setupCameraController(CameraController cameraController,List<CameraDescription>camerasDescription )async{
-    List<CameraDescription>cameras = await availableCameras();
-    if(cameras.isNotEmpty){
-      camerasDescription = cameras;
-      cameraController = CameraController(cameras.first, ResolutionPreset.high);
-
-      cameraController?.initialize().then((_){
-        
-      });
-    }
-
-  }
+  
 
 }
